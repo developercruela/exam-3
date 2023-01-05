@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.card {
+  max-width: 500px;
+  min-height: 200px;
+  background-color: rgb(185, 182, 182);
+  &:hover {
+    ::before {
+      width: 200px;
+      height: 30px;
+      background-color: black;
+    }
+  }
+}
+header {
+  height: 100vh;
+  padding-top: 150px;
+  .showcase {
+    justify-content: space-between;
+  }
+}
+.brands#brands {
+  padding: 150px;
+}
+.navbar {
+  ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+section#premium {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 200px);
+  .item {
+    &-1 {
+      grid-row: span 5;
+    }
+    &-2 {
+      background-color: #0f0;
+      grid-column: span 2;
+    }
+  }
+}
+// ---------------BURGER--------------------
+.all {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.control {
+  display: grid;
+}
+section#ingredients {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .price{
+    display: flex;
+    gap: 40px;
+  }
+  .btns {
+    button {
+      width: 100px;
+      height: 30px;
+      background-color: rgb(238, 193, 46);
+      border: none;
+      border-radius: 20px;
+      &:hover {
+        background-color: rgb(193, 235, 235);
+      }
+      &:active {
+        background-color: burlywood;
+      }
+    }
+  }
+}
